@@ -17,7 +17,7 @@ public class InterfaceIni extends Application {
 	Parent root = FXMLLoader.load(this.getClass().getResource("CalculatorGui.fxml"));
 	Scene scene = new Scene(root);
 	primaryStage.setScene(scene);
-	primaryStage.setTitle("Curtis's Calculator");
+	primaryStage.setTitle("Very Basic, Simple Calculator");
 	primaryStage.setResizable(false);
 	primaryStage.show();
 
