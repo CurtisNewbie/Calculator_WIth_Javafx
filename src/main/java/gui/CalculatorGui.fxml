@@ -120,7 +120,7 @@
       </HBox>
       <StackPane layoutX="1.0" layoutY="16.0" prefHeight="90.0" prefWidth="431.0">
          <children>
-            <Label fx:id="btnResult" prefHeight="93.0" prefWidth="370.0" text="Label">
+            <Label fx:id="btnResult" prefHeight="93.0" prefWidth="370.0" text="">
                <font>
                   <Font size="19.0" />
                </font>

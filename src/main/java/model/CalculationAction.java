@@ -5,6 +5,8 @@ public class CalculationAction {
     // This should be recursive.
     public String parseQuery(String query) {
 
+	
+	return null;
     }
 
     // add up num1 and num2
