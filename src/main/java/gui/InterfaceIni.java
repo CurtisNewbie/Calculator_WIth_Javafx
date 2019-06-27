@@ -18,6 +18,7 @@ public class InterfaceIni extends Application {
 	Scene scene = new Scene(root);
 	primaryStage.setScene(scene);
 	primaryStage.setTitle("Curtis's Calculator");
+	primaryStage.setResizable(false);
 	primaryStage.show();
 
     }

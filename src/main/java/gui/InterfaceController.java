@@ -3,6 +3,7 @@ package gui;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 
 public class InterfaceController {
 
@@ -39,7 +40,7 @@ public class InterfaceController {
     @FXML
     private Button btnMultiply;
     @FXML
-    private Button btnResult;
+    private Label btnResult;
 
     // Calculate the numbers based on the entered query.
     public void calculate(ActionEvent e) {
