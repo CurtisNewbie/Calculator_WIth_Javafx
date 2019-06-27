@@ -1,12 +1,16 @@
 package gui;
 
+import java.net.URL;
+import java.util.ResourceBundle;
+
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import model.CalculationAction;
 
-public class InterfaceController {
+public class InterfaceController implements Initializable{
 
     @FXML
     private Button num1;
@@ -41,15 +45,15 @@ public class InterfaceController {
     @FXML
     private Button btnMultiply;
     @FXML
-    private Label btnResult;
+    private Label labelResult;
 
-    private StringBuilder query = new StringBuilder();
+    private StringBuilder query;
 
     // Calculate the numbers based on the entered query.
     public void calculate(ActionEvent e) {
 	if (query.charAt(query.length() - 1) != ' ') {
 	    String result = CalculationAction.parseQuery(query.toString());
-	    btnResult.setText(result);
+	    labelResult.setText(result);
 	}
     }
 
@@ -90,7 +94,7 @@ public class InterfaceController {
 	}
 
 	// Update display
-	btnResult.setText(query.toString());
+	labelResult.setText(query.toString());
     }
 
     // Click the operators.
@@ -116,7 +120,7 @@ public class InterfaceController {
 		break;
 	    }
 	    // Update display
-	    btnResult.setText(query.toString());
+	    labelResult.setText(query.toString());
 	}
     }
 
@@ -130,7 +134,7 @@ public class InterfaceController {
 		query.deleteCharAt(queryLen - 1);
 	    }
 	    // Update display
-	    btnResult.setText(query.toString());
+	    labelResult.setText(query.toString());
 	}
     }
 
@@ -138,7 +142,7 @@ public class InterfaceController {
     public void clean(ActionEvent e) {
 	query = new StringBuilder();
 	// Update display
-	btnResult.setText(query.toString());
+	labelResult.setText(query.toString());
     }
 
     // it is used to verify whether there is aleady an operator at the end of the
@@ -153,6 +157,12 @@ public class InterfaceController {
 	} else {
 	    return false;
 	}
+    }
+
+    @Override
+    public void initialize(URL arg0, ResourceBundle arg1) {
+	query = new StringBuilder();
+	labelResult.setText("Start by selecting numbers or operators.");
     }
 
 }
