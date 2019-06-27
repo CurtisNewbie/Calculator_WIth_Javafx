@@ -47,8 +47,10 @@ public class InterfaceController {
 
     // Calculate the numbers based on the entered query.
     public void calculate(ActionEvent e) {
-	String result = CalculationAction.parseQuery();
-	btnResult.setText(result);
+	if (query.charAt(query.length() - 1) != ' ') {
+	    String result = CalculationAction.parseQuery(query.toString());
+	    btnResult.setText(result);
+	}
     }
 
     // Click the numbers buttons
@@ -93,32 +95,40 @@ public class InterfaceController {
 
     // Click the operators.
     public void selectOperator(ActionEvent e) {
-	// get the button's id
-	String id = ((Button) e.getSource()).getId();
-	switch (id) {
-	case "btnDivide":
-	    query.append(" / ");
-	    break;
-	case "btnSub":
-	    query.append(" - ");
-	    break;
-	case "btnAdd":
-	    query.append(" + ");
-	    break;
-	case "btnMultiply":
-	    query.append(" * ");
-	    break;
-	default:
-	    break;
+
+	if (canAddOperator()) {
+	    // get the button's id
+	    String id = ((Button) e.getSource()).getId();
+	    switch (id) {
+	    case "btnDivide":
+		query.append(" / ");
+		break;
+	    case "btnSub":
+		query.append(" - ");
+		break;
+	    case "btnAdd":
+		query.append(" + ");
+		break;
+	    case "btnMultiply":
+		query.append(" * ");
+		break;
+	    default:
+		break;
+	    }
+	    // Update display
+	    btnResult.setText(query.toString());
 	}
-	// Update display
-	btnResult.setText(query.toString());
     }
 
     // remove the last character
     public void backspace(ActionEvent e) {
-	if (query.length() > 0) {
-	    query.deleteCharAt(query.length() - 1);
+	int queryLen = query.length();
+	if (queryLen > 0) {
+	    if (query.charAt(queryLen - 1) == ' ') {
+		query.delete(queryLen - 3, queryLen);
+	    } else {
+		query.deleteCharAt(queryLen - 1);
+	    }
 	    // Update display
 	    btnResult.setText(query.toString());
 	}
@@ -129,6 +139,20 @@ public class InterfaceController {
 	query = new StringBuilder();
 	// Update display
 	btnResult.setText(query.toString());
+    }
+
+    // it is used to verify whether there is aleady an operator at the end of the
+    // string.
+    private boolean canAddOperator() {
+	if (query.length() != 0) {
+	    if (query.charAt(query.length() - 1) == ' ') {
+		return false;
+	    } else {
+		return true;
+	    }
+	} else {
+	    return false;
+	}
     }
 
 }
