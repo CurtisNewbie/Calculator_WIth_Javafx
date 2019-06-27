@@ -8,4 +8,4 @@ The numbers and operators entered comprise a 'query', once the user clicks on th
 
 <h2> Screenshot </h2>
 
-![2019-06-27_152243](https://user-images.githubusercontent.com/45169791/60274152-7a6bc680-98ef-11e9-86a0-b101ae26c0a2.png)
+![2019-06-27_153220](https://user-images.githubusercontent.com/45169791/60274864-c703d180-98f0-11e9-948e-4f166079f243.png)
