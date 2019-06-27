@@ -49,12 +49,22 @@ public class InterfaceController {
 
     // Click the numbers buttons
     public void enterNumbers(ActionEvent e) {
-
+	
     }
 
     // Click the operators.
     public void selectOperator(ActionEvent e) {
 
+    }
+    
+    // remove the last character
+    public void backspace(ActionEvent e) {
+	
+    }
+    
+    // clean screen
+    public void clean(ActionEvent e) {
+	
     }
 
 }
