@@ -4,7 +4,11 @@ It is a simple calculator. The GUI is created using Javafx. It allows the users 
 
 <h2> Basic algorithm </h2>
 
-The numbers and operators entered comprise a 'query', once the user clicks on the '=' button, the query is passed to the class for calculation, which parses the query and returns the result as a string. 
+The numbers and operators entered comprise a 'query', once the user clicks on the '=' button, the query is passed to the class for calculation, which parses the query and returns the result as a string.
+
+<h2>How to make it work</h2>
+
+This is a maven project, so you can go to the project folder and executs the following commands in the CMD: "mvn clean compile exec:java".
 
 <h2> Screenshot </h2>
 
