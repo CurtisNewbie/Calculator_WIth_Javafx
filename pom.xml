@@ -1,15 +1,10 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.curtis.calculator</groupId>
 	<artifactId>calculator</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	
-	<properties>
-	<exec.mainClass>gui.InterfaceIni</exec.mainClass>
-	</properties>
-	
+
 	<dependencies>
 		<!-- https://mvnrepository.com/artifact/org.openjfx/javafx-graphics -->
 		<dependency>
@@ -25,24 +20,12 @@
 			<version>13</version>
 		</dependency>
 
-		<!-- https://mvnrepository.com/artifact/org.openjfx/javafx -->
-		<dependency>
-			<groupId>org.openjfx</groupId>
-			<artifactId>javafx</artifactId>
-			<version>13</version>
-			<type>pom</type>
-		</dependency>
-
 		<!-- https://mvnrepository.com/artifact/org.openjfx/javafx-controls -->
 		<dependency>
 			<groupId>org.openjfx</groupId>
 			<artifactId>javafx-controls</artifactId>
 			<version>13</version>
 		</dependency>
-
-
-
-
 
 		<!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api -->
 		<dependency>
@@ -62,6 +45,14 @@
 					<configuration>
 						<source>11</source>
 						<target>11</target>
+					</configuration>
+				</plugin>
+				<plugin>
+					<groupId>org.openjfx</groupId>
+					<artifactId>javafx-maven-plugin</artifactId>
+					<version>0.0.3</version>
+					<configuration>
+						<mainClass>gui.InterfaceIni</mainClass>
 					</configuration>
 				</plugin>
 			</plugins>
