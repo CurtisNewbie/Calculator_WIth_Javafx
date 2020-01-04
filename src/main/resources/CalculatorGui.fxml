@@ -14,22 +14,22 @@
    <children>
       <HBox alignment="CENTER" layoutX="29.0" layoutY="139.0" prefHeight="63.0" prefWidth="370.0" spacing="32.0" AnchorPane.bottomAnchor="312.0" AnchorPane.leftAnchor="29.0" AnchorPane.rightAnchor="32.0" AnchorPane.topAnchor="139.0">
          <children>
-            <Button fx:id="btnCls" mnemonicParsing="false" onAction="#clean" prefHeight="41.0" prefWidth="38.0" text="C">
+            <Button fx:id="btnCls" mnemonicParsing="false" onAction="#clean" prefHeight="65.0" prefWidth="65.0" text="C">
                <font>
                   <Font size="29.0" />
                </font>
             </Button>
-            <Button fx:id="btnBackSpace" mnemonicParsing="false" onAction="#backspace" prefHeight="65.0" prefWidth="58.0" text="&lt;-">
+            <Button fx:id="btnBackSpace" mnemonicParsing="false" onAction="#backspace" prefHeight="65.0" prefWidth="65.0" text="B">
                <font>
                   <Font size="23.0" />
                </font>
             </Button>
-            <Button fx:id="btnAdd" mnemonicParsing="false" onAction="#selectOperator" prefHeight="64.0" prefWidth="57.0" text="+">
+            <Button fx:id="btnAdd" mnemonicParsing="false" onAction="#selectOperator" prefHeight="65.0" prefWidth="65.0" text="+">
                <font>
                   <Font size="26.0" />
                </font>
             </Button>
-            <Button fx:id="btnDivide" mnemonicParsing="false" onAction="#selectOperator" prefHeight="56.0" prefWidth="58.0" text="/">
+            <Button fx:id="btnDivide" mnemonicParsing="false" onAction="#selectOperator" prefHeight="65.0" prefWidth="65.0" text="/">
                <font>
                   <Font size="26.0" />
                </font>
@@ -41,22 +41,22 @@
       </HBox>
       <HBox alignment="CENTER" layoutX="29.0" layoutY="226.0" prefHeight="63.0" prefWidth="370.0" spacing="32.0" AnchorPane.bottomAnchor="225.0" AnchorPane.leftAnchor="29.0" AnchorPane.rightAnchor="32.0" AnchorPane.topAnchor="226.0">
          <children>
-            <Button fx:id="num1" mnemonicParsing="false" onAction="#enterNumbers" prefHeight="41.0" prefWidth="38.0" text="1">
+            <Button fx:id="num1" mnemonicParsing="false" onAction="#enterNumbers" prefHeight="65.0" prefWidth="65.0" text="1">
                <font>
                   <Font size="29.0" />
                </font>
             </Button>
-            <Button fx:id="num2" mnemonicParsing="false" onAction="#enterNumbers" prefHeight="41.0" prefWidth="38.0" text="2">
+            <Button fx:id="num2" mnemonicParsing="false" onAction="#enterNumbers" prefHeight="65.0" prefWidth="65.0" text="2">
                <font>
                   <Font size="29.0" />
                </font>
             </Button>
-            <Button fx:id="num3" mnemonicParsing="false" onAction="#enterNumbers" prefHeight="41.0" prefWidth="38.0" text="3">
+            <Button fx:id="num3" mnemonicParsing="false" onAction="#enterNumbers" prefHeight="65.0" prefWidth="65.0" text="3">
                <font>
                   <Font size="29.0" />
                </font>
             </Button>
-            <Button fx:id="btnSub" mnemonicParsing="false" onAction="#selectOperator" prefHeight="56.0" prefWidth="58.0" text="-">
+            <Button fx:id="btnSub" mnemonicParsing="false" onAction="#selectOperator" prefHeight="65.0" prefWidth="65.0" text="-">
                <font>
                   <Font size="26.0" />
                </font>
@@ -68,22 +68,22 @@
       </HBox>
       <HBox alignment="CENTER" layoutX="29.0" layoutY="310.0" prefHeight="63.0" prefWidth="370.0" spacing="32.0" AnchorPane.bottomAnchor="141.0" AnchorPane.leftAnchor="29.0" AnchorPane.rightAnchor="32.0" AnchorPane.topAnchor="310.0">
          <children>
-            <Button fx:id="num4" mnemonicParsing="false" onAction="#enterNumbers" prefHeight="41.0" prefWidth="38.0" text="4">
+            <Button fx:id="num4" mnemonicParsing="false" onAction="#enterNumbers" prefHeight="65.0" prefWidth="65.0" text="4">
                <font>
                   <Font size="29.0" />
                </font>
             </Button>
-            <Button fx:id="num5" mnemonicParsing="false" onAction="#enterNumbers" prefHeight="41.0" prefWidth="38.0" text="5">
+            <Button fx:id="num5" mnemonicParsing="false" onAction="#enterNumbers" prefHeight="65.0" prefWidth="65.0" text="5">
                <font>
                   <Font size="29.0" />
                </font>
             </Button>
-            <Button fx:id="num6" mnemonicParsing="false" onAction="#enterNumbers" prefHeight="41.0" prefWidth="38.0" text="6">
+            <Button fx:id="num6" mnemonicParsing="false" onAction="#enterNumbers" prefHeight="65.0" prefWidth="65.0" text="6">
                <font>
                   <Font size="29.0" />
                </font>
             </Button>
-            <Button fx:id="btnMultiply" mnemonicParsing="false" onAction="#selectOperator" prefHeight="56.0" prefWidth="58.0" text="*">
+            <Button fx:id="btnMultiply" mnemonicParsing="false" onAction="#selectOperator" prefHeight="65.0" prefWidth="65.0" text="*">
                <font>
                   <Font size="26.0" />
                </font>
@@ -95,22 +95,22 @@
       </HBox>
       <HBox alignment="CENTER" layoutX="29.0" layoutY="395.0" prefHeight="63.0" prefWidth="370.0" spacing="32.0" AnchorPane.bottomAnchor="56.0" AnchorPane.leftAnchor="29.0" AnchorPane.rightAnchor="32.0" AnchorPane.topAnchor="395.0">
          <children>
-            <Button fx:id="num7" mnemonicParsing="false" onAction="#enterNumbers" prefHeight="41.0" prefWidth="38.0" text="7">
+            <Button fx:id="num7" mnemonicParsing="false" onAction="#enterNumbers" prefHeight="65.0" prefWidth="65.0" text="7">
                <font>
                   <Font size="29.0" />
                </font>
             </Button>
-            <Button fx:id="num8" mnemonicParsing="false" onAction="#enterNumbers" prefHeight="41.0" prefWidth="38.0" text="8">
+            <Button fx:id="num8" mnemonicParsing="false" onAction="#enterNumbers" prefHeight="65.0" prefWidth="65.0" text="8">
                <font>
                   <Font size="29.0" />
                </font>
             </Button>
-            <Button fx:id="num9" mnemonicParsing="false" onAction="#enterNumbers" prefHeight="41.0" prefWidth="38.0" text="9">
+            <Button fx:id="num9" mnemonicParsing="false" onAction="#enterNumbers" prefHeight="65.0" prefWidth="65.0" text="9">
                <font>
                   <Font size="29.0" />
                </font>
             </Button>
-            <Button fx:id="btnEqual" mnemonicParsing="false" onAction="#calculate" prefHeight="56.0" prefWidth="58.0" text="=">
+            <Button fx:id="btnEqual" mnemonicParsing="false" onAction="#calculate" prefHeight="65.0" prefWidth="65.0" text="=">
                <font>
                   <Font size="26.0" />
                </font>
