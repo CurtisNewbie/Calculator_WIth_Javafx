@@ -162,7 +162,7 @@ public class InterfaceController implements Initializable {
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
 		query = new StringBuilder();
-		labelResult.setText("Start by selecting numbers or operators.");
+		labelResult.setText("Select numbers or operators...");
 	}
 
 }
