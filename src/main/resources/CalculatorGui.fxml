@@ -8,7 +8,9 @@
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane centerShape="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="514.0" prefWidth="431.0" scaleShape="false" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.InterfaceController">
+<AnchorPane centerShape="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="514.0" prefWidth="431.0" scaleShape="false" 
+   xmlns="http://javafx.com/javafx/11.0.1" 
+   xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.InterfaceController">
    <children>
       <HBox alignment="CENTER" layoutX="29.0" layoutY="139.0" prefHeight="63.0" prefWidth="370.0" spacing="32.0" AnchorPane.bottomAnchor="312.0" AnchorPane.leftAnchor="29.0" AnchorPane.rightAnchor="32.0" AnchorPane.topAnchor="139.0">
          <children>
