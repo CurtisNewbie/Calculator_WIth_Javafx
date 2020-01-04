@@ -6,12 +6,12 @@ It is a simple calculator. The GUI is created using Javafx. It allows the users 
 
 The numbers and operators entered comprise a 'query', once the user clicks on the '=' button, the query is passed to the class for calculation, which parses the query and returns the result as a string.
 
-<h2>How to make it work</h2>
+<h2> How to make it work</h2>
 
 This is a maven project, so you can go to the project folder and executs the following commands in the CMD:
 
     "mvn clean compile javafx:run".
 
-<h2> Screenshot </h2>
+<h2> Demo </h2>
 
-![2019-06-27_153220](https://user-images.githubusercontent.com/45169791/60274864-c703d180-98f0-11e9-948e-4f166079f243.png)
+<img src="https://user-images.githubusercontent.com/45169791/71770537-8af79c00-2f25-11ea-884e-97255a3c3e29.gif" width=400 height=514 />
